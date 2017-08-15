@@ -1,0 +1,684 @@
+.
+├── app
+│   ├── embms
+│   │   └── embms.apk
+│   ├── fastdormancy
+│   │   └── fastdormancy.apk
+│   └── shutdownlistener
+│       └── shutdownlistener.apk
+├── bin
+│   ├── cameraserver
+│   ├── displayfeature
+│   ├── fingerprintd
+│   ├── hci_qcomm_init
+│   ├── hvdcp_opti
+│   ├── irsc_util
+│   ├── mmbn-daemon
+│   ├── mm-qcamera-daemon
+│   ├── msm_irqbalance
+│   ├── mtpd
+│   ├── netmgrd
+│   ├── pm-proxy
+│   ├── pm-service
+│   ├── qmuxd
+│   ├── qseecomd
+│   ├── radiooptions
+│   ├── radish
+│   ├── rild
+│   ├── rmt_storage
+│   ├── sensors.qcom
+│   ├── tftp_server
+│   ├── time_daemon
+│   ├── wcnss_filter
+│   └── wcnss_service
+├── etc
+│   ├── a2dp_audio_policy_configuration.xml
+│   ├── aanc_tuning_mixer.txt
+│   ├── acdbdata
+│   │   ├── Forte
+│   │   │   ├── Forte_Bluetooth_cal.acdb
+│   │   │   ├── Forte_General_cal.acdb
+│   │   │   ├── Forte_Global_cal.acdb
+│   │   │   ├── Forte_Handset_cal.acdb
+│   │   │   ├── Forte_Hdmi_cal.acdb
+│   │   │   ├── Forte_Headset_cal.acdb
+│   │   │   └── Forte_Speaker_cal.acdb
+│   │   └── MTP
+│   │       ├── msm8952-tomtom-snd-card
+│   │       │   ├── MTP_WCD9330_Bluetooth_cal.acdb
+│   │       │   ├── MTP_WCD9330_General_cal.acdb
+│   │       │   ├── MTP_WCD9330_Global_cal.acdb
+│   │       │   ├── MTP_WCD9330_Handset_cal.acdb
+│   │       │   ├── MTP_WCD9330_Hdmi_cal.acdb
+│   │       │   ├── MTP_WCD9330_Headset_cal.acdb
+│   │       │   └── MTP_WCD9330_Speaker_cal.acdb
+│   │       └── msm8976-tasha-snd-card
+│   │           ├── MTP_WCD9335_Bluetooth_cal.acdb
+│   │           ├── MTP_WCD9335_General_cal.acdb
+│   │           ├── MTP_WCD9335_Global_cal.acdb
+│   │           ├── MTP_WCD9335_Handset_cal.acdb
+│   │           ├── MTP_WCD9335_Hdmi_cal.acdb
+│   │           ├── MTP_WCD9335_Headset_cal.acdb
+│   │           └── MTP_WCD9335_Speaker_cal.acdb
+│   ├── age_gender_bg
+│   ├── android_model_facea.dat
+│   ├── android_model_faceg.dat
+│   ├── audio_policy_configuration.xml
+│   ├── audio_policy_volumes.xml
+│   ├── cne
+│   │   ├── andsfCne.xml
+│   │   ├── SwimConfig.xml
+│   │   └── wqeclient
+│   │       ├── ATT
+│   │       │   ├── ATT_profile1.xml
+│   │       │   ├── ATT_profile2.xml
+│   │       │   ├── ATT_profile3.xml
+│   │       │   └── ATT_profile4.xml
+│   │       ├── ROW
+│   │       │   ├── ROW_profile1.xml
+│   │       │   ├── ROW_profile2.xml
+│   │       │   ├── ROW_profile3.xml
+│   │       │   ├── ROW_profile4.xml
+│   │       │   └── ROW_profile5.xml
+│   │       └── VZW
+│   │           ├── VZW_profile1.xml
+│   │           ├── VZW_profile2.xml
+│   │           ├── VZW_profile3.xml
+│   │           ├── VZW_profile4.xml
+│   │           ├── VZW_profile5.xml
+│   │           └── VZW_profile6.xml
+│   ├── crown_156_128.bin
+│   ├── data
+│   │   ├── dsi_config.xml
+│   │   ├── netmgr_config.xml
+│   │   └── qmi_config.xml
+│   ├── default_volume_tables.xml
+│   ├── face_goodly_208_180
+│   ├── face_ravishing_238_224
+│   ├── face_splendid_274_200
+│   ├── firmware
+│   │   ├── cpp_firmware_v1_10_0.fw
+│   │   ├── cpp_firmware_v1_1_1.fw
+│   │   ├── cpp_firmware_v1_1_6.fw
+│   │   ├── cpp_firmware_v1_2_0.fw
+│   │   ├── cpp_firmware_v1_4_0.fw
+│   │   ├── cpp_firmware_v1_5_0.fw
+│   │   ├── cpp_firmware_v1_6_0.fw
+│   │   ├── cpp_firmware_v1_8_0.fw
+│   │   ├── nvm_tlv_1.3.bin
+│   │   ├── nvm_tlv_2.1.bin
+│   │   ├── nvm_tlv_3.0.bin
+│   │   ├── nvm_tlv_3.2.bin
+│   │   ├── nvm_tlv.bin
+│   │   ├── rampatch_tlv_1.3.tlv
+│   │   ├── rampatch_tlv_2.1.tlv
+│   │   ├── rampatch_tlv_3.0.tlv
+│   │   ├── rampatch_tlv_3.2.tlv
+│   │   ├── rampatch_tlv.img
+│   │   └── wlan
+│   │       └── prima
+│   │           └── WCNSS_qcom_wlan_nv_b3gbl.bin
+│   ├── init.qcom.zram.sh
+│   ├── IPACM_cfg.xml
+│   ├── lf_facerank_model.bin
+│   ├── media_codecs_ffmpeg.xml
+│   ├── mixer_paths_wcd9326.xml
+│   ├── modem
+│   │   └── Diag.cfg
+│   ├── people_gender.dat
+│   ├── permissions
+│   │   ├── android.hardware.vulkan.level-0.xml
+│   │   ├── android.hardware.vulkan.version-1_0_3.xml
+│   │   ├── com.dsi.ant.antradio_library.xml
+│   │   ├── com.qti.snapdragon.sdk.display.xml
+│   │   ├── embms.xml
+│   │   ├── qcnvitems.xml
+│   │   ├── qcrilhook.xml
+│   │   └── qti_permissions.xml
+│   ├── pp_calib_data_auo_r61322_1080p_video_mode_dsi_panel.xml
+│   ├── pp_calib_data_tianma_r63350_1080p_video_mode_dsi_panel.xml
+│   ├── r_submix_audio_policy_configuration.xml
+│   ├── sdm_ys_32p_120_21_5_perturb50.bin
+│   ├── seccomp_policy
+│   │   ├── mediacodec-seccomp.policy
+│   │   └── mediaextractor-seccomp.policy
+│   ├── sensitive_pn.xml
+│   ├── sound_trigger_mixer_paths_wcd9306.xml
+│   ├── sound_trigger_mixer_paths_wcd9330.xml
+│   ├── sound_trigger_mixer_paths.xml
+│   ├── thermal-engine-8956.conf
+│   ├── thermal-engine-8976.conf
+│   ├── usb_audio_policy_configuration.xml
+│   └── watermark_font_2300_3199.dat
+├── framework
+│   ├── com.dsi.ant.antradio_library.jar
+│   ├── com.qti.snapdragon.sdk.display.jar
+│   ├── embmslibrary.jar
+│   ├── qcnvitems.jar
+│   └── qcrilhook.jar
+├── lib
+│   ├── hw
+│   │   ├── audio.primary.msm8952.so
+│   │   ├── camera.msm8952.so
+│   │   ├── fingerprint.fpc.so
+│   │   └── fingerprint.msm8952.so
+│   ├── libcamera2ndk.so
+│   ├── libcamera_client.so
+│   ├── libcamera_metadata.so
+│   ├── libcameraservice.so
+│   ├── lib_fpc_tac_shared.so
+│   ├── libhwui.so
+│   ├── libmmcamera_interface.so
+│   ├── libmmjpeg_interface.so
+│   ├── libmm-qcamera.so
+│   ├── libmorpho_memory_allocator.so
+│   ├── libmorpho_panorama.so
+│   ├── libOmxAacEnc.so
+│   ├── libOmxAmrEnc.so
+│   ├── libOmxCore.so
+│   ├── libOmxEvrcEnc.so
+│   ├── libOmxQcelp13Enc.so
+│   ├── libOmxVdec.so
+│   ├── libOmxVenc.so
+│   ├── libOmxVpp.so
+│   ├── libqminvapi.so
+│   ├── libradio_metadata.so
+│   ├── libradioservice.so
+│   ├── libradio.so
+│   ├── libreference-ril.so
+│   ├── libril.so
+│   ├── librilutils.so
+│   ├── libshims_ims.so
+│   └── soundfx
+│       └── libdirac.so
+├── lib64
+│   ├── hw
+│   │   ├── audio.primary.msm8952.so
+│   │   ├── fingerprint.fpc.so
+│   │   ├── fingerprint.goodix.default.so
+│   │   └── fingerprint.msm8952.so
+│   ├── lib7z.so
+│   ├── libantradio.so
+│   ├── libblasV8.so
+│   ├── libbrillo.so
+│   ├── libbrillo-stream.so
+│   ├── libcamera2ndk.so
+│   ├── libcamera_client.so
+│   ├── libcamera_metadata.so
+│   ├── libcameraservice.so
+│   ├── libcmaudio_jni.so
+│   ├── libcnefeatureconfig.so
+│   ├── libcom_fingerprints_service.so
+│   ├── libcrypto_utils.so
+│   ├── libexfat.so
+│   ├── lib_fpc_tac_shared.so
+│   ├── libframesequence.so
+│   ├── libfuse.so
+│   ├── libgiftranscode.so
+│   ├── libipanat.so
+│   ├── libjni_snapimageutil.so
+│   ├── libjni_snapmosaic.so
+│   ├── libjni_snaptinyplanet.so
+│   ├── libjni_terminal.so
+│   ├── libncurses.so
+│   ├── libnetfilter_conntrack.so
+│   ├── libnfnetlink.so
+│   ├── libntfs-3g.so
+│   ├── libOmxAacEnc.so
+│   ├── libOmxAmrEnc.so
+│   ├── libOmxCore.so
+│   ├── libOmxEvrcEnc.so
+│   ├── libOmxQcelp13Enc.so
+│   ├── libOmxVdec.so
+│   ├── libOmxVenc.so
+│   ├── libOmxVpp.so
+│   ├── libprotobuf-cpp-full.so
+│   ├── libqminvapi.so
+│   ├── libradio_metadata.so
+│   ├── libradioservice.so
+│   ├── libradio.so
+│   ├── libreference-ril.so
+│   ├── libril.so
+│   ├── librilutils.so
+│   ├── librsjni.so
+│   ├── libRSSupport.so
+│   ├── libshims_ims.so
+│   └── libssh.so
+├── output.txt
+├── priv-app
+│   ├── qcrilmsgtunnel
+│   │   └── qcrilmsgtunnel.apk
+│   ├── QtiTetherService
+│   │   └── QtiTetherService.apk
+│   └── XiaomiDoze
+│       └── XiaomiDoze.apk
+├── usr
+│   └── keylayout
+│       ├── atmel-maxtouch.kl
+│       ├── ft5x06_ts.kl
+│       └── Vendor_045e_Product_0719.kl
+└── vendor
+    ├── app
+    │   ├── colorservice
+    │   │   └── colorservice.apk
+    │   ├── ims
+    │   │   ├── ims.apk
+    │   │   └── lib
+    │   │       └── arm64
+    │   └── imssettings
+    │       └── imssettings.apk
+    ├── bin
+    │   ├── qseeproxydaemon
+    │   └── thermal-engine
+    ├── etc
+    │   └── diracmobile.config
+    ├── lib
+    │   ├── hw
+    │   │   ├── activity_recognition.msm8952.so
+    │   │   ├── power.msm8952.so
+    │   │   ├── sound_trigger.primary.msm8952.so
+    │   │   └── vulkan.msm8952.so
+    │   ├── libacdb-fts.so
+    │   ├── libacdbloader.so
+    │   ├── libacdbmapper.so
+    │   ├── libacdbrtac.so
+    │   ├── libactuator_ad5816g.so
+    │   ├── libactuator_ad5823.so
+    │   ├── libactuator_bu64244gwz.so
+    │   ├── libactuator_bu64297.so
+    │   ├── libactuator_dw9714.so
+    │   ├── libactuator_dw9716.so
+    │   ├── libactuator_dw9761b.so
+    │   ├── libactuator_dw9763_qtec.so
+    │   ├── libactuator_dw9763_s5k3p3sm.so
+    │   ├── libactuator_dw9763.so
+    │   ├── libactuator_lc898122.so
+    │   ├── libactuator_lc898212xd.so
+    │   ├── libactuator_rohm_bu64243gwz.so
+    │   ├── libadiertac.so
+    │   ├── libadpcmdec.so
+    │   ├── libadsprpc.so
+    │   ├── libAlacSwDec.so
+    │   ├── libApeSwDec.so
+    │   ├── libarcsoft_beauty_shot.so
+    │   ├── libaudcal.so
+    │   ├── libaudioalsa.so
+    │   ├── libavcodec.so
+    │   ├── libavformat.so
+    │   ├── libavutil.so
+    │   ├── libbtnv.so
+    │   ├── libbt-vendor.so
+    │   ├── libchromaflash.so
+    │   ├── libchromatix_csidtg_common.so
+    │   ├── libchromatix_csidtg_cpp_preview.so
+    │   ├── libchromatix_csidtg_postproc.so
+    │   ├── libchromatix_csidtg_preview.so
+    │   ├── libchromatix_ov16880_4k_preview_dw9763.so
+    │   ├── libchromatix_ov16880_4k_video_dw9763.so
+    │   ├── libchromatix_ov16880_common.so
+    │   ├── libchromatix_ov16880_cpp_ds_chromatix.so
+    │   ├── libchromatix_ov16880_cpp_hfr_120.so
+    │   ├── libchromatix_ov16880_cpp_hfr_60.so
+    │   ├── libchromatix_ov16880_cpp_hfr_90.so
+    │   ├── libchromatix_ov16880_cpp_liveshot.so
+    │   ├── libchromatix_ov16880_cpp_preview.so
+    │   ├── libchromatix_ov16880_cpp_snapshot.so
+    │   ├── libchromatix_ov16880_cpp_us_chromatix.so
+    │   ├── libchromatix_ov16880_cpp_video_full.so
+    │   ├── libchromatix_ov16880_cpp_video.so
+    │   ├── libchromatix_ov16880_default_preview_dw9763.so
+    │   ├── libchromatix_ov16880_default_video_dw9763.so
+    │   ├── libchromatix_ov16880_default_video.so
+    │   ├── libchromatix_ov16880_hfr_120_dw9763.so
+    │   ├── libchromatix_ov16880_hfr_120.so
+    │   ├── libchromatix_ov16880_hfr_60_dw9763.so
+    │   ├── libchromatix_ov16880_hfr_60.so
+    │   ├── libchromatix_ov16880_hfr_90_dw9763.so
+    │   ├── libchromatix_ov16880_hfr_90.so
+    │   ├── libchromatix_ov16880_liveshot.so
+    │   ├── libchromatix_ov16880_postproc.so
+    │   ├── libchromatix_ov16880_preview.so
+    │   ├── libchromatix_ov16880_qtec_4k_preview_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_4k_video_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_common.so
+    │   ├── libchromatix_ov16880_qtec_cpp_ds_chromatix.so
+    │   ├── libchromatix_ov16880_qtec_cpp_hfr_120.so
+    │   ├── libchromatix_ov16880_qtec_cpp_hfr_60.so
+    │   ├── libchromatix_ov16880_qtec_cpp_hfr_90.so
+    │   ├── libchromatix_ov16880_qtec_cpp_liveshot.so
+    │   ├── libchromatix_ov16880_qtec_cpp_preview.so
+    │   ├── libchromatix_ov16880_qtec_cpp_snapshot.so
+    │   ├── libchromatix_ov16880_qtec_cpp_us_chromatix.so
+    │   ├── libchromatix_ov16880_qtec_cpp_video_full.so
+    │   ├── libchromatix_ov16880_qtec_cpp_video.so
+    │   ├── libchromatix_ov16880_qtec_default_preview_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_default_video_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_default_video.so
+    │   ├── libchromatix_ov16880_qtec_hfr_120_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_hfr_120.so
+    │   ├── libchromatix_ov16880_qtec_hfr_60_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_hfr_60.so
+    │   ├── libchromatix_ov16880_qtec_hfr_90_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_hfr_90.so
+    │   ├── libchromatix_ov16880_qtec_liveshot.so
+    │   ├── libchromatix_ov16880_qtec_postproc.so
+    │   ├── libchromatix_ov16880_qtec_preview.so
+    │   ├── libchromatix_ov16880_qtec_snapshot.so
+    │   ├── libchromatix_ov16880_qtec_video_full.so
+    │   ├── libchromatix_ov16880_qtec_zsl_preview_dw9763.so
+    │   ├── libchromatix_ov16880_qtec_zsl_video_dw9763.so
+    │   ├── libchromatix_ov16880_snapshot.so
+    │   ├── libchromatix_ov16880_video_full.so
+    │   ├── libchromatix_ov16880_zsl_preview_dw9763.so
+    │   ├── libchromatix_ov16880_zsl_video_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_common.so
+    │   ├── libchromatix_s5k3p3sm_cpp_ds_chromatix.so
+    │   ├── libchromatix_s5k3p3sm_cpp_hfr_120.so
+    │   ├── libchromatix_s5k3p3sm_cpp_hfr_60.so
+    │   ├── libchromatix_s5k3p3sm_cpp_hfr_90.so
+    │   ├── libchromatix_s5k3p3sm_cpp_liveshot.so
+    │   ├── libchromatix_s5k3p3sm_cpp_preview.so
+    │   ├── libchromatix_s5k3p3sm_cpp_snapshot.so
+    │   ├── libchromatix_s5k3p3sm_cpp_us_chromatix.so
+    │   ├── libchromatix_s5k3p3sm_cpp_video_full.so
+    │   ├── libchromatix_s5k3p3sm_cpp_video.so
+    │   ├── libchromatix_s5k3p3sm_default_preview_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_default_video_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_default_video.so
+    │   ├── libchromatix_s5k3p3sm_hfr_120_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_hfr_120.so
+    │   ├── libchromatix_s5k3p3sm_hfr_60_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_hfr_60.so
+    │   ├── libchromatix_s5k3p3sm_hfr_90_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_hfr_90.so
+    │   ├── libchromatix_s5k3p3sm_liveshot.so
+    │   ├── libchromatix_s5k3p3sm_postproc.so
+    │   ├── libchromatix_s5k3p3sm_preview.so
+    │   ├── libchromatix_s5k3p3sm_snapshot.so
+    │   ├── libchromatix_s5k3p3sm_video_full.so
+    │   ├── libchromatix_s5k3p3sm_zsl_preview_dw9763.so
+    │   ├── libchromatix_s5k3p3sm_zsl_video_dw9763.so
+    │   ├── libchromatix_s5k5e8_ofilm_common.so
+    │   ├── libchromatix_s5k5e8_ofilm_cpp_liveshot.so
+    │   ├── libchromatix_s5k5e8_ofilm_cpp_preview.so
+    │   ├── libchromatix_s5k5e8_ofilm_cpp_snapshot.so
+    │   ├── libchromatix_s5k5e8_ofilm_cpp_video.so
+    │   ├── libchromatix_s5k5e8_ofilm_default_video.so
+    │   ├── libchromatix_s5k5e8_ofilm_liveshot.so
+    │   ├── libchromatix_s5k5e8_ofilm_postproc.so
+    │   ├── libchromatix_s5k5e8_ofilm_preview.so
+    │   ├── libchromatix_s5k5e8_ofilm_snapshot.so
+    │   ├── libchromatix_s5k5e8_ofilm_zsl_preview.so
+    │   ├── libchromatix_s5k5e8_ofilm_zsl_video.so
+    │   ├── libchromatix_s5k5e8_qtec_common.so
+    │   ├── libchromatix_s5k5e8_qtec_cpp_liveshot.so
+    │   ├── libchromatix_s5k5e8_qtec_cpp_preview.so
+    │   ├── libchromatix_s5k5e8_qtec_cpp_snapshot.so
+    │   ├── libchromatix_s5k5e8_qtec_cpp_video.so
+    │   ├── libchromatix_s5k5e8_qtec_default_video.so
+    │   ├── libchromatix_s5k5e8_qtec_liveshot.so
+    │   ├── libchromatix_s5k5e8_qtec_postproc.so
+    │   ├── libchromatix_s5k5e8_qtec_preview.so
+    │   ├── libchromatix_s5k5e8_qtec_snapshot.so
+    │   ├── libchromatix_s5k5e8_qtec_zsl_preview.so
+    │   ├── libchromatix_s5k5e8_qtec_zsl_video.so
+    │   ├── libdiag.so
+    │   ├── libdsi_netctrl.so
+    │   ├── libdsutils.so
+    │   ├── libFaceGrade.so
+    │   ├── libFaceProc.so
+    │   ├── libfastcvadsp_stub.so
+    │   ├── libfastcvopt.so
+    │   ├── libffmpeg_extractor.so
+    │   ├── libffmpeg_omx.so
+    │   ├── libffmpeg_utils.so
+    │   ├── libflash_pmic.so
+    │   ├── libhwdaphal.so
+    │   ├── libI420colorconvert.so
+    │   ├── libidl.so
+    │   ├── libjpegdhw.so
+    │   ├── libjpegdmahw.so
+    │   ├── libjpegehw.so
+    │   ├── libllvd_smore.so
+    │   ├── libllvd_sw_tnr.so
+    │   ├── libllvm-qgl.so
+    │   ├── liblqe.so
+    │   ├── libmdmdetect.so
+    │   ├── libmm-als.so
+    │   ├── libmmcamera2_c2d_module.so
+    │   ├── libmmcamera2_cpp_module.so
+    │   ├── libmmcamera2_dcrf.so
+    │   ├── libmmcamera2_frame_algorithm.so
+    │   ├── libmmcamera2_iface_modules.so
+    │   ├── libmmcamera2_imglib_modules.so
+    │   ├── libmmcamera2_isp_modules.so
+    │   ├── libmmcamera2_is.so
+    │   ├── libmmcamera2_mct.so
+    │   ├── libmmcamera2_pp_buf_mgr.so
+    │   ├── libmmcamera2_pproc_modules.so
+    │   ├── libmmcamera2_q3a_core.so
+    │   ├── libmmcamera2_sensor_debug.so
+    │   ├── libmmcamera2_sensor_modules.so
+    │   ├── libmmcamera2_stats_algorithm.so
+    │   ├── libmmcamera2_stats_modules.so
+    │   ├── libmmcamera2_vpe_module.so
+    │   ├── libmmcamera2_wnr_module.so
+    │   ├── libmmcamera_chromaflash_lib.so
+    │   ├── libmmcamera_csidtg.so
+    │   ├── libmmcamera_dcrf_lib.so
+    │   ├── libmmcamera_dw9763_eeprom.so
+    │   ├── libmmcamera_dw9763_qtec_eeprom.so
+    │   ├── libmmcamera_dw9763_s5k3p3_eeprom.so
+    │   ├── libmmcamera_eeprom_util.so
+    │   ├── libmmcamera_eztune_module.so
+    │   ├── libmmcamera_faceproc.so
+    │   ├── libmmcamera_hdr_gb_lib.so
+    │   ├── libmmcamera_imglib.so
+    │   ├── libmmcamera_isp_abcc44.so
+    │   ├── libmmcamera_isp_abf40.so
+    │   ├── libmmcamera_isp_bcc40.so
+    │   ├── libmmcamera_isp_be_stats44.so
+    │   ├── libmmcamera_isp_bf_stats47.so
+    │   ├── libmmcamera_isp_bg_stats44.so
+    │   ├── libmmcamera_isp_bhist_stats44.so
+    │   ├── libmmcamera_isp_bpc40.so
+    │   ├── libmmcamera_isp_chroma_enhan40.so
+    │   ├── libmmcamera_isp_chroma_suppress40.so
+    │   ├── libmmcamera_isp_clamp_encoder40.so
+    │   ├── libmmcamera_isp_clamp_video40.so
+    │   ├── libmmcamera_isp_clamp_viewfinder40.so
+    │   ├── libmmcamera_isp_color_correct40.so
+    │   ├── libmmcamera_isp_color_xform_encoder40.so
+    │   ├── libmmcamera_isp_color_xform_viewfinder40.so
+    │   ├── libmmcamera_isp_cs_stats44.so
+    │   ├── libmmcamera_isp_demosaic40.so
+    │   ├── libmmcamera_isp_demux40.so
+    │   ├── libmmcamera_isp_fovcrop_encoder40.so
+    │   ├── libmmcamera_isp_fovcrop_viewfinder40.so
+    │   ├── libmmcamera_isp_gamma40.so
+    │   ├── libmmcamera_isp_ihist_stats44.so
+    │   ├── libmmcamera_isp_linearization40.so
+    │   ├── libmmcamera_isp_ltm44.so
+    │   ├── libmmcamera_isp_luma_adaptation40.so
+    │   ├── libmmcamera_isp_mce40.so
+    │   ├── libmmcamera_isp_mesh_rolloff40.so
+    │   ├── libmmcamera_isp_rs_stats44.so
+    │   ├── libmmcamera_isp_scaler_encoder44.so
+    │   ├── libmmcamera_isp_scaler_viewfinder44.so
+    │   ├── libmmcamera_isp_sce40.so
+    │   ├── libmmcamera_isp_sub_module.so
+    │   ├── libmmcamera_isp_wb40.so
+    │   ├── libmmcamera_llvd.so
+    │   ├── libmmcamera_optizoom_lib.so
+    │   ├── libmmcamera_ov16880_qtec.so
+    │   ├── libmmcamera_ov16880.so
+    │   ├── libmmcamera_pdafcamif.so
+    │   ├── libmmcamera_pdaf.so
+    │   ├── libmmcamera_ppbase_module.so
+    │   ├── libmmcamera_s5k3p3sm.so
+    │   ├── libmmcamera_s5k5e8_ofilm_eeprom.so
+    │   ├── libmmcamera_s5k5e8_ofilm.so
+    │   ├── libmmcamera_s5k5e8_qtec_eeprom.so
+    │   ├── libmmcamera_s5k5e8_qtec.so
+    │   ├── libmmcamera_sw_tnr.so
+    │   ├── libmmcamera_thread_services.so
+    │   ├── libmmcamera_tintless_algo.so
+    │   ├── libmmcamera_tintless_bg_pca_algo.so
+    │   ├── libmmcamera_tuning_lookup.so
+    │   ├── libmmcamera_tuning.so
+    │   ├── libmmcamera_ubifocus_lib.so
+    │   ├── libmmcamera_vpu_module.so
+    │   ├── libmm-color-convertor.so
+    │   ├── libmmjpeg.so
+    │   ├── libmmqjpeg_codec.so
+    │   ├── libmmqjpegdma.so
+    │   ├── libmmsw_detail_enhancement.so
+    │   ├── libmmsw_math.so
+    │   ├── libmmsw_opencl.so
+    │   ├── libmmsw_platform.so
+    │   ├── libmorpho_easy_hdr.so
+    │   ├── libmorpho_hdr_checker.so
+    │   ├── libmorpho_image_stab4.so
+    │   ├── libmorpho_panorama_gp.so
+    │   ├── libois_lc898122.so
+    │   ├── libOmxAacDec.so
+    │   ├── libOmxAlacDec.so
+    │   ├── libOmxAlacDecSw.so
+    │   ├── libOmxAmrwbplusDec.so
+    │   ├── libOmxApeDec.so
+    │   ├── libOmxApeDecSw.so
+    │   ├── libOmxEvrcDec.so
+    │   ├── libOmxQcelp13Dec.so
+    │   ├── libOmxWmaDec.so
+    │   ├── liboptizoom.so
+    │   ├── libperipheral_client.so
+    │   ├── libqcci_legacy.so
+    │   ├── libqcmaputils.so
+    │   ├── libqdi.so
+    │   ├── libqdp.so
+    │   ├── libqmi_cci.so
+    │   ├── libqmi_client_helper.so
+    │   ├── libqmi_client_qmux.so
+    │   ├── libqmi_common_so.so
+    │   ├── libqmi_csi.so
+    │   ├── libqmi_encdec.so
+    │   ├── libqmiservices.so
+    │   ├── libqmi.so
+    │   ├── libqomx_jpegdec.so
+    │   ├── libqomx_jpegenc_pipe.so
+    │   ├── libqomx_jpegenc.so
+    │   ├── libQSEEComAPI.so
+    │   ├── libqti-perfd-client.so
+    │   ├── libRecoFace.so
+    │   ├── libseemore.so
+    │   ├── libsensor1.so
+    │   ├── libsensor_reg.so
+    │   ├── libsensor_user_cal.so
+    │   ├── libsmemlog.so
+    │   ├── libsmwrapper.so
+    │   ├── libswresample.so
+    │   ├── libswscale.so
+    │   ├── libthermalclient.so
+    │   ├── libtime_genoff.so
+    │   ├── libTimeService.so
+    │   ├── libtrueportrait.so
+    │   ├── libts_detected_face_hal.so
+    │   ├── libts_face_beautify_hal.so
+    │   ├── libubifocus.so
+    │   ├── sensor_calibrate.so
+    │   ├── sensors.ssc.so
+    │   └── soundfx
+    │       ├── libqcbassboost.so
+    │       ├── libqcreverb.so
+    │       └── libqcvirt.so
+    ├── lib64
+    │   ├── hw
+    │   │   ├── activity_recognition.msm8952.so
+    │   │   ├── gatekeeper.msm8952.so
+    │   │   ├── keystore.msm8952.so
+    │   │   ├── power.msm8952.so
+    │   │   └── vulkan.msm8952.so
+    │   ├── libacdb-fts.so
+    │   ├── libacdbloader.so
+    │   ├── libacdbmapper.so
+    │   ├── libacdbrtac.so
+    │   ├── libadiertac.so
+    │   ├── libadsprpc.so
+    │   ├── libAlacSwDec.so
+    │   ├── libApeSwDec.so
+    │   ├── libaudcal.so
+    │   ├── libaudioalsa.so
+    │   ├── libavcodec.so
+    │   ├── libavformat.so
+    │   ├── libavutil.so
+    │   ├── libbtnv.so
+    │   ├── libconfigdb.so
+    │   ├── libdiag.so
+    │   ├── libdisp-aba.so
+    │   ├── libdrmfs.so
+    │   ├── libdrmtime.so
+    │   ├── libdsi_netctrl.so
+    │   ├── libdsutils.so
+    │   ├── libffmpeg_extractor.so
+    │   ├── libffmpeg_omx.so
+    │   ├── libffmpeg_utils.so
+    │   ├── libGPreqcancel.so
+    │   ├── libGPreqcancel_svc.so
+    │   ├── libhwdaphal.so
+    │   ├── libidl.so
+    │   ├── lib-imsvt.so
+    │   ├── libizat_core.so
+    │   ├── libllvm-qgl.so
+    │   ├── liblqe.so
+    │   ├── libmdmdetect.so
+    │   ├── libmm-als.so
+    │   ├── libmm-dspp-utils.so
+    │   ├── libmm-qdcm-diag.so
+    │   ├── libnetmgr.so
+    │   ├── libOmxAlacDecSw.so
+    │   ├── libOmxApeDecSw.so
+    │   ├── libperipheral_client.so
+    │   ├── libqcci_legacy.so
+    │   ├── libqcmaputils.so
+    │   ├── libqdi.so
+    │   ├── libqdp.so
+    │   ├── libqisl.so
+    │   ├── libqmi_cci.so
+    │   ├── libqmi_client_helper.so
+    │   ├── libqmi_client_qmux.so
+    │   ├── libqmi_common_so.so
+    │   ├── libqmi_csi.so
+    │   ├── libqmi_encdec.so
+    │   ├── libqmiservices.so
+    │   ├── libqmi.so
+    │   ├── libQSEEComAPI.so
+    │   ├── libqti-perfd-client.so
+    │   ├── libril-qc-ltedirectdisc.so
+    │   ├── libril-qc-qmi-1.so
+    │   ├── libril-qc-radioconfig.so
+    │   ├── libril-qcril-hook-oem.so
+    │   ├── librilqmiservices.so
+    │   ├── librpmb.so
+    │   ├── lib-sec-disp.so
+    │   ├── libSecureUILib.so
+    │   ├── libsecureui.so
+    │   ├── libsecureui_svcsock.so
+    │   ├── libsensor1.so
+    │   ├── libsensor_reg.so
+    │   ├── libsensor_user_cal.so
+    │   ├── libsettings.so
+    │   ├── libsmemlog.so
+    │   ├── libssd.so
+    │   ├── libStDrvInt.so
+    │   ├── libswresample.so
+    │   ├── libswscale.so
+    │   ├── libsystem_health_mon.so
+    │   ├── libthermalclient.so
+    │   ├── libthermalioctl.so
+    │   ├── libtime_genoff.so
+    │   ├── libTimeService.so
+    │   ├── sensor_calibrate.so
+    │   └── sensors.ssc.so
+    └── qcril.db
+
+49 directories, 632 files
